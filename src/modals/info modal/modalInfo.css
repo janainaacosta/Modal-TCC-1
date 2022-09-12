@@ -2,13 +2,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    
+    flex-direction: column;    
 }
 
 .modal-content{
+    display: flex;
+    flex-direction: column;
     width: 850px;
-    margin: 50px;
+    margin: 120px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     align-items: center;
     justify-content: center;
@@ -20,6 +21,7 @@
     justify-content: space-between;
     align-items: center;
 }
+
 
 .modal-content form{
     margin: 10px;
@@ -37,12 +39,37 @@
     margin-left: 10px;
 }
 
+
 .containerUp{
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-direction: row;
 
+}
+.containerUp img{
+    width: 120px;
+    height: 200px;
+}
+.containerUp select{
+    margin: 10px;
+    width: 180px;
+    height: 25px;
+    border: 1px solid rgba(157, 157, 157, 0.42);
+}
+
+
+#ativo{
+    color: #2BB069;
+}
+#manutencao{
+    color: #F19A49;
+}
+#danificado{
+    color: #BF2121;
+}
+#movido{
+    color: #9937D4;
 }
 
 .containerImage{
@@ -55,10 +82,6 @@
     margin: 10px;
 }
 
-.containerUp img{
-    width: 120px;
-    height: 200px;
-}
 
 .containerInputs{
     justify-content: space-between;
@@ -101,4 +124,133 @@
     border: 1px solid rgba(0, 0, 0, 0.49);
     font-weight: bold;
     color: #0038FF;
+}
+
+@media screen and (max-width: 1100px){
+    .modal-content{
+        width: 800px;
+    }
+    .modal-content input{
+        width: 223px;
+        height: 25px;
+    }
+}
+@media screen and (max-width: 950px){
+    .modal-content{
+        width: 700px;
+    }
+    .modal-content input{
+        width: 200px;
+        height: 25px;
+    }
+}
+@media screen and (max-width: 850px){
+    .modal-content{
+        width: 500px;
+    }
+    .modal-content input{
+        width: 150px;
+        height: 25px;
+        margin: 5px;
+    }
+    .modal-content label{
+        margin: 5px;
+    }
+    .containerImage{
+        width: 150px;
+        height: 150px;
+    }
+    .containerUp img{
+        width: 70px;
+        height: 110px;
+    }
+    .containerUp select{
+        width: 70px;
+        height: 20px;
+        margin: 5px;
+    }
+    .containerButtons button{
+        width: 100px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .modal-content{
+        width: 450px;
+    }
+    .modal-content input{
+        width: 100px;
+        height: 25px;
+        margin: 5px;
+    }
+    .modal-content label{
+        margin: 5px;
+    }
+    .containerUp select{
+        width: 70px;
+        height: 20px;
+    }
+    .containerButtons button{
+        width: 80px;
+        height: 40px;
+    }
+}
+@media screen and (max-width: 600px){
+    .modal-content{
+        width: 300px;
+    }
+    .modal-content input, select{
+        width: 70px;
+        height: 25px;
+        margin: 5px;
+        font-size: 10px;
+    }
+    .modal-content label{
+        font-size: 9px;
+        margin: 5px;
+    }
+    .containerUp{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .containerUp select{
+        width: 80px;
+        height: 25px;
+        margin: 5px;
+        font-size: 10px;
+    }
+   
+    .containerInputs{
+        justify-content: space-between;
+        display: flex;
+    }
+    .containerButtons button{
+        width: 80px;
+        height: 40px;
+    }
+    .containerImage{
+        width: 80px;
+        height: 80px;
+    }
+    .containerUp img{
+        width: 35px;
+        height: 60px;
+    }
+    .containerUp textarea{
+        margin: 10px;
+        width: 80%;
+        height: 80px;
+    }
+    .containerUp textarea{
+        margin: 5px;
+        width: 250px;
+        
+    }
+    .containerButtons button{
+        width: 70px;
+        height: 30px;
+        font-size: 10px;
+    }
 }

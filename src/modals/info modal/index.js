@@ -1,12 +1,10 @@
 import * as React from 'react';
 import Modal from 'react-modal';
 import './modalInfo.css'
-import Dropdown from '../../components/dropdown';
 
 import item from '../../assets/chair.png'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-Modal.setAppElement("#root");
+
 
 
 function ModalInfo() {
@@ -22,7 +20,7 @@ function ModalInfo() {
 
   return (
     <div className="container">
-      <div>
+
       <button onClick={openModal}>Open Modal</button>
       <Modal
         isOpen={modalIsOpen}
@@ -47,9 +45,20 @@ function ModalInfo() {
                         </div>
                         <div>
                             <label>Situação</label>
-                            <Dropdown 
-                            
-                            />
+                            <select>
+                                <option id='ativo'>
+                                    Ativo
+                                </option>
+                                <option id='manutencao'>
+                                    Manutenção
+                                </option>
+                                <option id='danificado'>
+                                    Danificado
+                                </option>
+                                <option id='movido'>
+                                    Movido
+                                </option>
+                            </select>
                         </div>
                     </div>
                     <div>
@@ -100,7 +109,7 @@ function ModalInfo() {
             </div>
         </form>
       </Modal>
-    </div>
+
     </div>
   );
 }

@@ -1,0 +1,65 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;    
+}
+
+.modal-content-patrimonio{
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    height: 500px;
+    margin: 120px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    align-items: center;
+
+}
+
+.modal-content-patrimonio label{
+    display: block;
+    margin: 5px;
+    font-size: 13px;
+    color: #9DA5A9;
+}
+
+.modal-content-patrimonio input, select{
+    width: 200px;
+    height: 25px;
+    background: #FFFFFF;
+    border: 1px solid rgba(157, 157, 157, 0.42);
+    border-radius: 2px;
+    margin: 5px;
+}
+
+.containerOne{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.containerOne input{
+    width: 100px;
+}
+#selectSituation{
+    width: 100px;
+}
+
+.containerTwo{
+    display: flex;
+    flex-direction: column;
+}
+.containerTwo input, select{
+    width: 310px;
+}
+
+.containerThree{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.containerThree input{
+    width: 90px;
+}
