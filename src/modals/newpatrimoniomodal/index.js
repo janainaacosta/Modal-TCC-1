@@ -16,14 +16,15 @@ function NewPatrimonioModal() {
 
   return (
     <div className="container">
-      <button onClick={openModal}>Open Modal</button>
+      <button onClick={openModal}>Modal novo patrimonio</button>
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
-        className="modal-content-patrimonio"
+        className="modalContentPatrimonio"
       >
         <div className='title'>
-            
+           <p id='title-modal'>Cadastrar novo patrimônio</p>
+           <p id='info-modal'>Neste modal você poderá fazer as seguintes alterações:</p>
         </div>
         <div className='containerOne'>
             <div>
@@ -91,9 +92,16 @@ function NewPatrimonioModal() {
             </div>
         </div>
 
+        <div className='addImage'>
+            <button>
+                +
+            </button>
+            <p>Adicionar imagem</p>
+        </div>
+
         <div className='containerButton'>
-            <button />
-            <button />
+            <button id='delete'> Excluir</button>
+            <button id='new'>Cadastrar patrimonio</button>
         </div>
       </Modal>
 

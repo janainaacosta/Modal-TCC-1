@@ -3,9 +3,7 @@ import Modal from 'react-modal';
 import './modalInfo.css'
 
 import item from '../../assets/chair.png'
-
-
-
+import view from '../../assets/view.png'
 
 function ModalInfo() {
   const [modalIsOpen, setIsOpen] = React.useState(false);
@@ -21,17 +19,19 @@ function ModalInfo() {
   return (
     <div className="container">
 
-      <button onClick={openModal}>Open Modal</button>
+      <button onClick={openModal}>
+        Modal Infomações 
+      </button>
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         className="modal-content"
       >
         <div className='headerModal'>
-            <p>Editar Patrimônio</p>
-            {/* <FontAwesomeIcon icon="fa-solid fa-x" /> */}
-            
+            <h1>Editar Patrimônio</h1>
+            <p>Neste modal você poderá fazer as seguintes alterações:</p>
         </div>
+        
         <form>
             <div className='containerUp'>
                 <div className='containerImage'>
