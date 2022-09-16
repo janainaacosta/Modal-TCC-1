@@ -1,8 +1,12 @@
+body{
+    font-family: sans-serif;  
+}
+
 .container{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;    
+    flex-direction: column;  
 }
 
 .modalContentPatrimonio{
@@ -11,7 +15,9 @@
     width: 330px;
     height: 600px;
     margin: 120px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     align-items: center;
     background-color: #fff;
 }
@@ -22,8 +28,6 @@
     font-size: 13px;
     color: #9DA5A9;
 }
-
-
 
 .modalContentPatrimonio input, select{
     width: 200px;
@@ -41,6 +45,9 @@
 
 .title #title-modal{
     font-size: 17px;
+    font-size: 24px;
+    color: #574E4E;
+    margin-top: 0;
 }
 
 .title #info-modal{
@@ -48,16 +55,17 @@
     color: #9DA5A9;
 }
 
-
 .containerOne{
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
 }
+
 .containerOne input{
     width: 100px;
 }
+
 #selectSituation{
     width: 100px;
 }
@@ -66,6 +74,7 @@
     display: flex;
     flex-direction: column;
 }
+
 .containerTwo input, select{
     width: 310px;
 }
@@ -81,6 +90,10 @@
     width: 90px;
 }
 
+.containerThree label{
+    font-size: 12px;
+}
+
 .addImage{
     display: flex;
     flex-direction: column;
@@ -88,6 +101,7 @@
     align-items: center;
     margin: 10px;
 }
+
 .addImage button{
     border-radius: 100%;
     width: 40px;
@@ -96,6 +110,14 @@
     color: #3F48CC;
     border: 1px solid #3F48CC;
     font-size: 25px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.addImage button:hover{
+    background-color: #ededee;
+    border: 1px solid #9c9cd3;
 }
 
 .containerButton{
@@ -109,20 +131,32 @@
 
 .containerButton #delete{
     background-color: #C23229;
-    border: 1px solid rgba(0, 0, 0, 0.49);
+    border: none;
     color: #fff;
     font-weight: bold;
-
     height: 30px;
     width: 90px;
+    border-radius: 3px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
 }
 
 .containerButton #new{
     background-color: #0038FF;
-    border: 1px solid rgba(0, 0, 0, 0.49);
+    border: none;
     color: #fff;
     font-weight: bold;
-
     width: 210px;
     height: 30px;
+    border-radius: 3px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.containerButton #new:hover{
+    background-color: #1035b9;
+}
+
+.containerButton #delete:hover{
+    background-color: #b42222
 }
